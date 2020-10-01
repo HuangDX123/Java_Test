@@ -24,7 +24,7 @@ public class Demo {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         List list = new ArrayList();
         list.add(1);
         list.add(4);
@@ -36,7 +36,7 @@ public class Demo {
 
         //输出数组元素的个数
         System.out.println(dest.size());//list.size();
-        Collections.copy(dest,list);
+        Collections.copy(dest, list);
 
         System.out.println(dest);
 
