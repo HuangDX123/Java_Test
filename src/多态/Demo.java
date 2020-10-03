@@ -5,6 +5,8 @@ public class Demo {
         Students s = new Students();
         s.eat();
         s.work();
+
+
         Teacher t = new Teacher();
         t.eat();
         t.work();
