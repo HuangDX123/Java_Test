@@ -13,7 +13,12 @@ public class Student {
     //非静态方法
 
     //静态方法
+
     public void eat(){
         System.out.println("我吃饭");
     }
+
+
 }
+
+
