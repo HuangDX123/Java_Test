@@ -3,16 +3,9 @@ package 反射;
 import java.lang.reflect.Field;
 
 public class Demo {
-    public static void main(String[] args) throws NoSuchFieldException,IllegalAccessException {
-//        Class c1  = Class.forName("www.huang.反射.User");
-//        Field field = c1.getDeclaredField("name");
-
-        Object u = new User("小明",00,5);
-
-        Class c = u.getClass();
-
-        Field f = c.getDeclaredField("name");
-
+    public static void main(String[] args) throws NoSuchFieldException, ClassNotFoundException {
+        Class c1 = Class.forName("反射.User");
+        Field f = c1.getDeclaredField("name");
         System.out.println(f);
 
 
@@ -52,11 +45,11 @@ class User {
         this.id = id;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void setAge(int id){
+    public void setAge(int id) {
         this.id = id;
     }
 
